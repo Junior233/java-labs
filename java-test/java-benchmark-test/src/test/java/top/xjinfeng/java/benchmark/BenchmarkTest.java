@@ -5,6 +5,8 @@ import org.openjdk.jmh.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
+// https://github.com/openjdk/jmh
+// https://www.cnkirito.moe/java-jmh/#%E9%99%B7%E9%98%B1-1%EF%BC%9A%E6%AD%BB%E7%A0%81%E6%B6%88%E9%99%A4
 @BenchmarkMode({Mode.All})
 //线程数
 @Threads(1)
@@ -20,6 +22,10 @@ import java.util.concurrent.TimeUnit;
 public class BenchmarkTest {
 
     private static int i = 0;
+
+    @Benchmark
+    public void test(){
+    }
 
     @Benchmark
     public void testPrintln(){
